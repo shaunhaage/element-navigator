@@ -6,7 +6,6 @@ var useref = require('gulp-useref');
 var cssnano = require('gulp-cssnano');
 var runSequence = require('run-sequence');
 
-
 gulp.task('sass', function() {
   return gulp.src('scss/**/*.scss')
     .pipe(sass())
@@ -23,7 +22,7 @@ gulp.task('useref', function() {
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('publish'));
 });
 
 gulp.task('build', function (callback) {

@@ -8,3 +8,8 @@ body {
     height: 200px;
     margin-bottom: 100px;
     display: block; }
+  #image-wrapper p {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 100px;
+    background-color: red; }
