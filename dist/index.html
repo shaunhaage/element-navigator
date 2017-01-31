@@ -1,18 +1,34 @@
-<link rel="stylesheet" href="css/styles.min.css">
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+	<div id="image-wrapper">
+		<img src="foo.gif" alt="foo1" />
+		<img src="foo.gif" alt="foo11"/>
+		<img src="foo.gif" alt="foo111"/>
+		<img src="foo.gif" alt="foo1111"/>
+		<img src="foo.gif" alt="foo11111"/>
+		<img src="foo.gif" alt="foo111111"/>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	
+	<script src="js/jquery.elementNavigator.js"></script>
+	<script>
+	$(function(){
+		$('#image-wrapper').elementNavigator({selector : 'img'});
+	});	
+	</script>
+</body>
+</html>
 
-<script src="js/jquery.elementNavigator.js"></script>
-<script>
-$(function(){
-	$('#image-wrapper').elementNavigator({selector : 'img'});
-});	
-</script>
-<div id="image-wrapper">
-<img src="foo.gif" alt="foo1" />
-<img src="foo.gif" alt="foo11"/>
-<img src="foo.gif" alt="foo111"/>
-<img src="foo.gif" alt="foo1111"/>
-<img src="foo.gif" alt="foo11111"/>
-<img src="foo.gif" alt="foo111111"/>
-</div>
+
+
+
+
+
+
 
